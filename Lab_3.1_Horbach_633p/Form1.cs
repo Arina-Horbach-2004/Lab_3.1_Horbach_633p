@@ -329,10 +329,19 @@ namespace Lab_3._1_Horbach_633p
                 MessageBox.Show(sb.ToString(), "Протокол");
                 return;
             }
-
             mixedQ = result.Item1;
             gameValue = result.Item2;
             mixedP = result.Item3;
+            string initialTable = result.Item4;
+            string finalTable = result.Item5;
+
+            sb.AppendLine();
+            sb.AppendLine("Початкова симплекс-таблиця:");
+            sb.AppendLine(initialTable);
+
+            sb.AppendLine();
+            sb.AppendLine("Остаточна симплекс-таблиця:");
+            sb.AppendLine(finalTable);
 
             sb.AppendLine();
             sb.AppendLine("Розрахунок змішаних стратегій...");
